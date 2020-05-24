@@ -15,7 +15,7 @@ class FindOrderService {
     private ordersRepository: IOrdersRepository,
     private productsRepository: IProductsRepository,
     private customersRepository: ICustomersRepository,
-  ) {}
+  ) { }
 
   public async execute({ id }: IRequest): Promise<Order | undefined> {
     // TODO
